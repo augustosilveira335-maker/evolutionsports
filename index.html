@@ -1,1 +1,519 @@
-<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=analise/"><meta name="robots" content="noindex">
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Escola do Inter Canoas · Evolution Sports</title>
+<meta name="description" content="Escola oficial do Sport Club Internacional em Canoas. Futebol para meninos e meninas de 5 a 17 anos na Av. Boqueirão, 2660, dentro do complexo Evolution Sports.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0d0d0f">
+<meta property="og:title" content="Escola do Inter Canoas">
+<meta property="og:description" content="Futebol de 5 a 17 anos, menino e menina, na Av. Boqueirão, 2660.">
+<meta property="og:image" content="fotos/aluno.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="fotos/time-a.webp" media="(min-width: 761px)">
+<link rel="preload" as="image" href="fotos/aluno.webp" media="(max-width: 760px)">
+<style>
+:root{
+  --verm:#e2001a; --verm-esc:#a30012; --verm-f:#fff1f1;
+  --tinta:#0d0d0f; --tinta-2:#1a1a1e; --papel:#f5f2ec; --papel-2:#ebe6dc;
+  --linha:rgba(13,13,15,.12); --muda:#5d5a55; --verde:#2fae47; --branco:#fff;
+  --r:22px; --gut:clamp(16px,4vw,56px); --max:1240px;
+  --cond:"Archivo",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--cond);font-stretch:100%;background:var(--papel);color:var(--tinta);line-height:1.55;font-size:17px;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.disp{font-stretch:68%;font-weight:900;text-transform:uppercase;line-height:.9;letter-spacing:-.01em}
+.disp em{font-style:italic;color:var(--verm)}
+.olho{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.olho::before{content:"";width:28px;height:2px;background:currentColor}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:56px;padding:0 26px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .2s,background .2s,box-shadow .2s;white-space:nowrap}
+.btn:active{transform:scale(.98)}
+.btn-v{background:var(--verm);color:#fff;box-shadow:0 10px 30px -10px rgba(226,0,26,.7)}
+.btn-v:hover{background:#c90018}
+.btn-l{border:1.5px solid rgba(255,255,255,.55);color:#fff}
+.btn-l:hover{background:rgba(255,255,255,.12)}
+.btn-t{border:1.5px solid var(--tinta)}
+.btn-t:hover{background:var(--tinta);color:#fff}
+.wa{width:20px;height:20px;flex:none}
+
+/* topo */
+.topo{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.marca{display:flex;align-items:center;gap:12px;color:#fff;transition:color .3s}
+.marca b{font-stretch:62%;font-weight:900;font-size:26px;letter-spacing:.01em;text-transform:uppercase;line-height:1}
+.marca b i{font-style:italic;color:var(--verm)}
+.marca span{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;opacity:.75;border-left:1px solid currentColor;padding-left:12px;line-height:1.3}
+.nav{display:flex;gap:28px;font-size:15px;font-weight:600;color:#fff;transition:color .3s}
+.nav a{opacity:.85}.nav a:hover{opacity:1}
+.topo .btn{height:46px;padding:0 20px;font-size:15px}
+.topo.solido{background:rgba(245,242,236,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--linha)}
+.topo.solido .marca,.topo.solido .nav{color:var(--tinta)}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#111}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero picture img{object-position:50% 38%;transform:scale(1.04);animation:respira 18s ease-out forwards}
+@keyframes respira{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,15,.6) 0%,rgba(13,13,15,0) 20%,rgba(13,13,15,.1) 40%,rgba(13,13,15,.94) 100%),linear-gradient(90deg,rgba(13,13,15,.78) 0%,rgba(13,13,15,.35) 45%,rgba(13,13,15,0) 70%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-bottom:clamp(28px,6vh,64px)}
+.hero .olho{color:#fff;margin-bottom:18px}
+.hero h1{font-size:clamp(60px,8.6vw,150px)}
+.hero h1 em{color:#ff2b3f}
+.hero p.sub{max-width:560px;font-size:clamp(17px,1.5vw,20px);margin:22px 0 30px;color:rgba(255,255,255,.88)}
+.hero .acoes{display:flex;gap:12px;flex-wrap:wrap}
+.fatos{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(34px,6vh,64px);border-top:1px solid rgba(255,255,255,.25)}
+.fatos div{padding:18px 18px 0 0}
+.fatos b{display:block;font-stretch:68%;font-weight:900;font-size:clamp(28px,3vw,40px);line-height:1;text-transform:uppercase}
+.fatos span{font-size:14px;color:rgba(255,255,255,.75)}
+
+/* faixa */
+.faixa{background:var(--verm);color:#fff;overflow:hidden;white-space:nowrap;padding:14px 0}
+.faixa div{display:inline-flex;gap:38px;animation:corre 38s linear infinite;font-stretch:68%;font-weight:800;font-size:22px;text-transform:uppercase;letter-spacing:.02em}
+.faixa span::after{content:"●";margin-left:38px;font-size:10px;vertical-align:middle;opacity:.7}
+@keyframes corre{to{transform:translateX(-50%)}}
+
+section{position:relative}
+.sec{padding:clamp(72px,11vw,140px) 0}
+.cab{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.cab h2{font-size:clamp(46px,7vw,104px)}
+.cab p{font-size:18px;color:var(--muda);max-width:520px}
+
+/* turma (captação) */
+.turma{background:var(--papel)}
+.turma .grade{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(28px,5vw,72px);align-items:center}
+.turma h2{font-size:clamp(50px,7.4vw,112px)}
+.turma .txt p{font-size:18px;color:var(--muda);margin:22px 0 28px;max-width:470px}
+.turma .foto{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;max-width:420px}
+.turma .foto img{width:100%;height:100%;object-fit:cover}
+.card{background:#fff;border-radius:28px;padding:clamp(22px,3vw,38px);box-shadow:0 30px 80px -40px rgba(13,13,15,.35),0 0 0 1px var(--linha)}
+.passo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--muda);margin:0 0 14px}
+.passo i{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--tinta);color:#fff;font-style:normal;font-size:13px}
+.ops{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:28px}
+.ops.dois{grid-template-columns:repeat(3,1fr)}
+.op{border:1.5px solid var(--linha);border-radius:16px;padding:14px 10px;text-align:center;font-weight:700;font-size:16px;line-height:1.2;transition:border-color .2s,background .2s,color .2s}
+.op small{display:block;font-weight:500;font-size:12.5px;color:var(--muda);margin-top:4px}
+.op:hover{border-color:var(--tinta)}
+.op[aria-pressed="true"]{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.op[aria-pressed="true"] small{color:rgba(255,255,255,.7)}
+.campo{display:block;width:100%;height:54px;border:1.5px solid var(--linha);border-radius:14px;padding:0 16px;font:inherit;font-size:16px;margin-bottom:22px;background:var(--papel)}
+.campo:focus{outline:none;border-color:var(--tinta);background:#fff}
+.resumo{display:flex;justify-content:space-between;gap:14px;align-items:center;border-top:1px dashed var(--linha);padding-top:20px;margin-bottom:18px;font-size:15px;color:var(--muda)}
+.resumo b{color:var(--tinta);font-size:17px}
+.card .btn{width:100%}
+.card .nota{font-size:13px;color:var(--muda);text-align:center;margin-top:12px}
+
+/* horarios */
+.horas{background:var(--tinta);color:#fff;overflow:hidden}
+.horas .cab p{color:rgba(255,255,255,.7)}
+.dias{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:rgba(255,255,255,.14);border-radius:var(--r);overflow:hidden}
+.dia{background:var(--tinta-2);padding:26px 20px 30px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between}
+.dia b{font-stretch:68%;font-weight:900;font-size:30px;text-transform:uppercase;letter-spacing:.02em}
+.dia ul{list-style:none;display:grid;gap:8px}
+.dia li{font-size:20px;font-weight:700;display:flex;align-items:center;gap:10px}
+.dia li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--verm)}
+.dia.sab{background:var(--verm)}
+.dia.sab li::before{background:#fff}
+.horas .rod{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-top:28px;color:rgba(255,255,255,.65);font-size:15px;flex-wrap:wrap}
+
+/* por que */
+.pq .itens{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.it{background:#fff;border-radius:var(--r);padding:28px 24px 30px;box-shadow:0 0 0 1px var(--linha);display:flex;flex-direction:column;gap:14px}
+.it .n{font-stretch:62%;font-weight:900;font-size:64px;line-height:.85;color:var(--verm)}
+.it h3{font-stretch:75%;font-weight:800;font-size:24px;text-transform:uppercase;line-height:1.05}
+.it p{color:var(--muda);font-size:16px}
+.base{margin-top:18px;display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;background:var(--verm);color:#fff;border-radius:var(--r);padding:26px 30px}
+.base b{font-stretch:62%;font-weight:900;font-size:clamp(34px,4vw,54px);text-transform:uppercase;line-height:.9}
+.base p{font-size:17px;color:rgba(255,255,255,.9)}
+.base a{font-weight:700;border-bottom:1.5px solid #fff;padding-bottom:2px;white-space:nowrap}
+
+/* galeria */
+.gal{padding:0 0 clamp(72px,11vw,140px)}
+.mosaico{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(120px,15vw,210px);gap:12px}
+.mosaico figure{border-radius:18px;overflow:hidden;position:relative;background:#ddd}
+.mosaico img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.mosaico figure:hover img{transform:scale(1.04)}
+.mosaico figcaption{position:absolute;left:14px;bottom:12px;color:#fff;font-weight:700;font-size:14px;text-shadow:0 1px 10px rgba(0,0,0,.6)}
+.g1{grid-column:1/8;grid-row:1/4}.g2{grid-column:8/13;grid-row:1/3}.g3{grid-column:8/10;grid-row:3/4}.g4{grid-column:10/13;grid-row:3/4}
+.g5{grid-column:1/5;grid-row:4/6}.g6{grid-column:5/9;grid-row:4/6}.g7{grid-column:9/13;grid-row:4/6}
+
+/* professor */
+.prof{background:var(--papel-2)}
+.prof .grade{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,6vw,90px);align-items:center}
+.prof .ret{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--verm)}
+.prof .ret img{width:100%;height:100%;object-fit:cover;object-position:50% 10%}
+.prof h2{font-size:clamp(54px,8vw,124px)}
+.prof .cargo{font-weight:700;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--verm);margin:18px 0 18px}
+.prof p{font-size:18px;color:var(--muda);max-width:520px;margin-bottom:14px}
+.mochila{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0}
+.mochila span{border:1.5px solid var(--tinta);border-radius:999px;padding:8px 14px;font-weight:700;font-size:14px}
+
+/* evolution */
+.evo{background:#0f1a12;color:#fff;overflow:hidden}
+.evo .olho{color:var(--verde)}
+.evo .cab p{color:rgba(255,255,255,.7)}
+.evo .cab h2 em{color:var(--verde)}
+.blocos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.bl{border-radius:var(--r);overflow:hidden;background:#17241a;display:flex;flex-direction:column}
+.bl .im{aspect-ratio:4/3;overflow:hidden}
+.bl .im img{width:100%;height:100%;object-fit:cover}
+.bl .tx{padding:24px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.bl h3{font-stretch:72%;font-weight:900;font-size:30px;text-transform:uppercase;line-height:1}
+.bl p{color:rgba(255,255,255,.72);font-size:16px;flex:1}
+.bl a{align-self:flex-start;margin-top:8px;font-weight:700;color:var(--verde);border-bottom:1.5px solid currentColor;padding-bottom:2px}
+.evo .linha{display:flex;gap:28px;flex-wrap:wrap;margin-top:34px;padding-top:26px;border-top:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.75);font-size:15px}
+.evo .linha b{color:#fff}
+
+/* faq */
+.faq .grade{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,6vw,90px)}
+.faq h2{font-size:clamp(50px,7vw,104px);position:sticky;top:110px}
+details{border-bottom:1px solid var(--linha)}
+summary{list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:24px 0;font-weight:700;font-size:19px;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-weight:400;font-size:30px;line-height:1;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 24px;color:var(--muda);max-width:620px}
+
+/* local */
+.local{background:var(--tinta);color:#fff}
+.local .grade{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,5vw,70px);align-items:stretch}
+.local h2{font-size:clamp(50px,7vw,104px)}
+.local .end{font-size:20px;margin:24px 0 8px;font-weight:700}
+.local .ref{color:rgba(255,255,255,.65);margin-bottom:28px}
+.local .acoes{display:flex;gap:12px;flex-wrap:wrap}
+.mapa{border-radius:var(--r);overflow:hidden;min-height:380px;background:#222}
+.mapa iframe{width:100%;height:100%;min-height:380px;border:0;filter:grayscale(.2) contrast(1.05)}
+
+/* final */
+.final{background:var(--verm);color:#fff;text-align:center;padding:clamp(80px,12vw,150px) 0}
+.final h2{font-size:clamp(56px,10vw,160px)}
+.final h2 em{color:var(--tinta)}
+.final p{font-size:19px;margin:22px auto 32px;max-width:540px;color:rgba(255,255,255,.9)}
+.final .btn{background:#fff;color:var(--verm)}
+.final .btn:hover{background:var(--tinta);color:#fff}
+
+footer{background:var(--tinta);color:rgba(255,255,255,.6);font-size:14px;padding:36px 0 110px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#fff}
+
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;display:none;align-items:center;gap:10px;height:58px;padding:0 22px 0 18px;border-radius:999px;background:#25d366;color:#0b3d1d;font-weight:800;box-shadow:0 14px 34px -10px rgba(0,0,0,.45)}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.faixa div,.hero picture img{animation:none}}
+
+@media (max-width:1060px){
+  .nav{display:none}
+  .pq .itens{grid-template-columns:repeat(2,1fr)}
+  .dias{grid-template-columns:repeat(3,1fr)}
+  .blocos{grid-template-columns:1fr 1fr}
+  .blocos .bl:last-child{grid-column:span 2}
+  .blocos .bl:last-child .im{aspect-ratio:16/7}
+}
+@media (max-width:760px){
+  body{font-size:16px}
+  .topo .wrap{height:66px}
+  .marca b{font-size:22px}
+  .marca span{display:none}
+  .topo .btn{height:42px;padding:0 16px;font-size:14px}
+  .hero{display:block;min-height:0;background:var(--tinta)}
+  .hero picture{position:relative;display:block;height:64svh;min-height:420px}
+  .hero picture img{object-position:50% 22%}
+  .hero::after{bottom:auto;height:calc(64svh + 2px);min-height:422px;background:linear-gradient(180deg,rgba(13,13,15,.55) 0%,rgba(13,13,15,0) 22%,rgba(13,13,15,0) 55%,rgba(13,13,15,1) 94%)}
+  .hero .wrap{margin-top:-96px;padding-bottom:36px}
+  .hero h1{font-size:clamp(56px,16.5vw,92px)}
+  .hero .acoes .btn{flex:1 1 100%}
+  .fatos{grid-template-columns:1fr 1fr}
+  .fatos div:nth-child(n+3){padding-top:14px}
+  .cab,.turma .grade,.prof .grade,.faq .grade,.local .grade{grid-template-columns:1fr}
+  .turma .foto{display:none}
+  .ops{grid-template-columns:repeat(2,1fr)}
+  .ops.dois{grid-template-columns:1fr 1fr 1fr}
+  .dias{grid-template-columns:repeat(2,1fr)}
+  .dia{min-height:150px;padding:20px 18px 22px}
+  .pq .itens{grid-template-columns:1fr}
+  .base{grid-template-columns:1fr;gap:12px}
+  .mosaico{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px;gap:8px}
+  .mosaico figure{grid-column:auto!important;grid-row:auto!important}
+  .mosaico .g1{grid-column:1/3!important;grid-row:span 2!important}
+  .mosaico .g7{grid-column:1/3!important}
+  .mosaico .g3{display:none}
+  .topo:not(.solido){background:linear-gradient(180deg,rgba(13,13,15,.72),rgba(13,13,15,0))}
+  .fab{opacity:0;transform:translateY(20px);pointer-events:none;transition:opacity .3s,transform .3s}
+  .fab.on{opacity:1;transform:none;pointer-events:auto}
+  .blocos{grid-template-columns:1fr}
+  .blocos .bl:last-child{grid-column:auto}
+  .blocos .bl:last-child .im{aspect-ratio:4/3}
+  .faq h2{position:static}
+  .fab{display:inline-flex}
+  .resumo{flex-direction:column;align-items:flex-start;gap:4px}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43a9.38 9.38 0 0 1 9.43 9.44c0 5.2-4.23 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.8.72.7 5.82.7 12.08c0 2 .52 3.95 1.52 5.67L.6 23.64l6.03-1.58a11.33 11.33 0 0 0 5.42 1.38h.01c6.25 0 11.35-5.1 11.35-11.36 0-3.03-1.18-5.89-3.33-8.04"/></symbol>
+</svg>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a href="#inicio" class="marca" aria-label="Escola do Inter Canoas, início"><b>Escola do <i>Inter</i></b><span>Canoas<br>RS</span></a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#turma">Turmas</a><a href="#horarios">Horários</a><a href="#escola">A escola</a><a href="#evolution">Evolution</a><a href="#local">Como chegar</a>
+    </nav>
+    <a class="btn btn-v" data-wa="escola" href="#turma">Aula experimental</a>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <picture>
+    <source media="(max-width: 760px)" srcset="fotos/aluno.webp">
+    <img src="fotos/time-a.webp" alt="Time da Escola do Inter Canoas com os professores no campo sintético da Evolution" fetchpriority="high">
+  </picture>
+  <div class="wrap">
+    <p class="olho rv">Escola oficial do Sport Club Internacional</p>
+    <h1 class="disp rv">Escola do Inter<br><em>em Canoas.</em></h1>
+    <p class="sub rv">Futebol para meninos e meninas de 5 a 17 anos, com a metodologia do Inter, na Av. Boqueirão, 2660, dentro do complexo Evolution Sports.</p>
+    <div class="acoes rv">
+      <a class="btn btn-v" href="#turma">Encontrar a turma do meu filho</a>
+      <a class="btn btn-l" data-wa="escola" href="#"><svg class="wa"><use href="#wa"/></svg>Falar no WhatsApp</a>
+    </div>
+    <div class="fatos rv">
+      <div><b>5 a 17</b><span>anos, por idade</span></div>
+      <div><b>Seg a sáb</b><span>manhã e fim da tarde</span></div>
+      <div><b>Meninas</b><span>turmas de futebol feminino</span></div>
+      <div><b>Sábado</b><span>dia de jogo e amistoso</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="faixa" aria-hidden="true"><div>
+  <span>Aqui o sonho colorado tem caminho</span><span>Matrículas abertas</span><span>Turmas de 5 a 17 anos</span><span>Meninas também jogam no Inter</span><span>Av. Boqueirão, 2660</span>
+  <span>Aqui o sonho colorado tem caminho</span><span>Matrículas abertas</span><span>Turmas de 5 a 17 anos</span><span>Meninas também jogam no Inter</span><span>Av. Boqueirão, 2660</span>
+</div></div>
+
+<section class="turma sec" id="turma">
+  <div class="wrap grade">
+    <div class="txt">
+      <p class="olho rv" style="color:var(--verm)">Aula experimental</p>
+      <h2 class="disp rv">Qual é a turma <em>do seu filho?</em></h2>
+      <p class="rv">Três toques e a mensagem já sai pronta para a escola, com idade e horário. A gente responde no WhatsApp e marca a primeira aula.</p>
+      <div class="foto rv"><img src="fotos/aluno.webp" alt="Aluno da Escola do Inter Canoas de uniforme vermelho em frente à faixa da escola" loading="lazy"></div>
+    </div>
+    <form class="card rv" id="form-turma" onsubmit="return false">
+      <p class="passo"><i>1</i>Idade de quem vai treinar</p>
+      <div class="ops" data-grupo="idade">
+        <button type="button" class="op" aria-pressed="false" data-v="5 a 6 anos">5 a 6<small>anos</small></button>
+        <button type="button" class="op" aria-pressed="false" data-v="7 a 8 anos">7 a 8<small>anos</small></button>
+        <button type="button" class="op" aria-pressed="false" data-v="9 a 10 anos">9 a 10<small>anos</small></button>
+        <button type="button" class="op" aria-pressed="false" data-v="11 a 12 anos">11 a 12<small>anos</small></button>
+        <button type="button" class="op" aria-pressed="false" data-v="13 a 14 anos">13 a 14<small>anos</small></button>
+        <button type="button" class="op" aria-pressed="false" data-v="15 a 17 anos">15 a 17<small>anos</small></button>
+      </div>
+      <p class="passo"><i>2</i>Melhor horário</p>
+      <div class="ops dois" data-grupo="turno">
+        <button type="button" class="op" aria-pressed="false" data-v="de manhã">Manhã<small>seg, qua, sex</small></button>
+        <button type="button" class="op" aria-pressed="false" data-v="no fim da tarde">18h<small>seg a sex</small></button>
+        <button type="button" class="op" aria-pressed="false" data-v="no sábado de manhã">Sábado<small>9h30</small></button>
+      </div>
+      <p class="passo"><i>3</i>Nome de quem vai treinar</p>
+      <input class="campo" id="nome" type="text" placeholder="Ex.: Pedro" autocomplete="off" maxlength="40">
+      <div class="resumo"><span>Sua mensagem</span><b id="resumo">Escolha a idade e o horário</b></div>
+      <a class="btn btn-v" id="enviar" href="#" target="_blank" rel="noopener"><svg class="wa"><use href="#wa"/></svg>Agendar aula pelo WhatsApp</a>
+      <p class="nota">Abre o WhatsApp da escola com a mensagem pronta. Sem cadastro.</p>
+    </form>
+  </div>
+</section>
+
+<section class="horas sec" id="horarios">
+  <div class="wrap">
+    <div class="cab">
+      <div><p class="olho rv" style="color:#ff2b3f">Grade da semana</p><h2 class="disp rv">Treino de segunda <em>a sábado.</em></h2></div>
+      <p class="rv">A turma é separada por idade. Na aula experimental o professor confirma o horário certo para o seu filho.</p>
+    </div>
+    <div class="dias rv">
+      <div class="dia"><b>Seg</b><ul><li>9h30</li><li>18h</li></ul></div>
+      <div class="dia"><b>Ter</b><ul><li>18h</li></ul></div>
+      <div class="dia"><b>Qua</b><ul><li>9h30</li><li>18h</li></ul></div>
+      <div class="dia"><b>Qui</b><ul><li>18h</li></ul></div>
+      <div class="dia"><b>Sex</b><ul><li>9h30</li><li>18h</li></ul></div>
+      <div class="dia sab"><b>Sáb</b><ul><li>9h30</li></ul></div>
+    </div>
+    <div class="rod rv"><span>Grade publicada pela Escola do Inter Canoas em 2026.</span><a class="btn btn-v" data-wa="escola" href="#"><svg class="wa"><use href="#wa"/></svg>Confirmar horário</a></div>
+  </div>
+</section>
+
+<section class="pq sec" id="escola">
+  <div class="wrap">
+    <div class="cab">
+      <div><p class="olho rv" style="color:var(--verm)">Por que a Escola do Inter</p><h2 class="disp rv">O mesmo método <em>do clube.</em></h2></div>
+      <p class="rv">Uniforme, metodologia e calendário de jogos do Sport Club Internacional, sem sair de Canoas.</p>
+    </div>
+    <div class="itens">
+      <article class="it rv"><span class="n">01</span><h3>Metodologia oficial</h3><p>Treino planejado pelo Inter, por faixa de idade, do fundamento ao jogo.</p></article>
+      <article class="it rv"><span class="n">02</span><h3>Rede com 40+ unidades</h3><p>Canoas faz parte da rede oficial de escolas do Inter, com mais de 40 unidades.</p></article>
+      <article class="it rv"><span class="n">03</span><h3>Jogo de verdade</h3><p>Amistosos aos sábados e torneios como a Champions Cup, do Sub-8 ao Sub-14.</p></article>
+      <article class="it rv"><span class="n">04</span><h3>Meninas também jogam</h3><p>Turmas de futebol feminino, com as mesmas oportunidades para todas.</p></article>
+    </div>
+    <div class="base rv">
+      <b>Até a base</b>
+      <p>Na rede, a escola é o primeiro degrau: o Heitor, da unidade de Montenegro, foi aprovado para as categorias de base do Inter.</p>
+      <a href="https://www.instagram.com/escoladointercanoas/" target="_blank" rel="noopener">Ver no Instagram ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="gal" aria-label="Fotos da escola">
+  <div class="wrap mosaico">
+    <figure class="g1 rv"><img src="fotos/time-b.webp" alt="Turma da Escola do Inter Canoas posando no campo" loading="lazy"><figcaption>Dia de jogo · Sub-12</figcaption></figure>
+    <figure class="g2 rv"><img src="fotos/perfilados.webp" alt="Jogadores perfilados antes da partida" loading="lazy"><figcaption>Perfilados antes do amistoso</figcaption></figure>
+    <figure class="g3 rv"><img src="fotos/treino.webp" alt="Treino no campo sintético" loading="lazy"></figure>
+    <figure class="g4 rv"><img src="fotos/noite.webp" alt="Campo iluminado à noite" loading="lazy"><figcaption>Treino das 18h</figcaption></figure>
+    <figure class="g5 rv"><img src="fotos/time-c.webp" alt="Time com os professores" loading="lazy"></figure>
+    <figure class="g6 rv"><img src="fotos/time-d.webp" alt="Turma da escola reunida no gramado" loading="lazy"></figure>
+    <figure class="g7 rv"><img src="fotos/society.webp" alt="Campo de society sintético da Evolution" loading="lazy"><figcaption>Campo sintético</figcaption></figure>
+  </div>
+</section>
+
+<section class="prof sec">
+  <div class="wrap grade">
+    <div class="ret rv"><img src="fotos/juninho.webp" alt="Juninho, diretor e treinador da Escola do Inter Canoas" loading="lazy"></div>
+    <div>
+      <p class="olho rv" style="color:var(--verm)">Quem está no campo</p>
+      <h2 class="disp rv">Juninho <em>e equipe.</em></h2>
+      <p class="cargo rv">Diretor e treinador da Escola do Inter Canoas</p>
+      <p class="rv">O Juninho comanda a escola e o complexo Evolution, e está no campo com as turmas junto com os professores.</p>
+      <p class="rv">Para o primeiro treino, a mochila é simples:</p>
+      <div class="mochila rv"><span>Chuteira</span><span>Caneleira</span><span>Garrafinha de água</span><span>Uniforme</span><span>Vontade de treinar</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="evo sec" id="evolution">
+  <div class="wrap">
+    <div class="cab">
+      <div><p class="olho rv">Evolution Sports · mesmo endereço</p><h2 class="disp rv">Enquanto ele treina, <em>a família fica.</em></h2></div>
+      <p class="rv">A escola funciona dentro da Evolution: campo para alugar, bar, sinuca, churrasqueira e almoço no mesmo lugar, com estacionamento.</p>
+    </div>
+    <div class="blocos">
+      <article class="bl rv"><div class="im"><img src="fotos/society.webp" alt="Campo de society sintético" loading="lazy"></div><div class="tx"><h3>Society e areia</h3><p>Campos de society sintético e quadras de areia para o jogo da semana, do FT5 ao futevôlei.</p><a data-wa="evo-quadra" href="#">Reservar horário ↗</a></div></article>
+      <article class="bl rv"><div class="im"><img src="fotos/sinuca.webp" alt="Sinuca e churrasqueiras da Evolution" loading="lazy"></div><div class="tx"><h3>Aniversário e churrasco</h3><p>Quadra, salão, churrasqueiras e sinuca para a festa do time ou o aniversário do craque.</p><a data-wa="evo-festa" href="#">Orçar uma festa ↗</a></div></article>
+      <article class="bl rv"><div class="im"><img src="fotos/mesa.webp" alt="Amigos no bar da Evolution depois do jogo" loading="lazy"></div><div class="tx"><h3>Bar e Rei da Alaminuta</h3><p>Bar para depois do jogo e à la minuta do Rei da Alaminuta, a partir de R$ 25,90.</p><a href="https://www.instagram.com/evolution.sportsbar/" target="_blank" rel="noopener">Ver a Evolution ↗</a></div></article>
+    </div>
+    <div class="linha rv"><span><b>Todos os dias</b>, das 8h às 2h</span><span><b>Av. Boqueirão, 2660</b> · ao lado do Stock Center</span><span><b>Reservas</b> (51) 99533-0123</span></div>
+  </div>
+</section>
+
+<section class="faq sec">
+  <div class="wrap grade">
+    <h2 class="disp rv">Antes da <em>primeira aula.</em></h2>
+    <div class="rv">
+      <details open><summary>A partir de que idade pode treinar?</summary><p>A escola tem turmas de 5 a 17 anos, separadas por idade. Na mensagem você diz a idade e a gente indica a turma.</p></details>
+      <details><summary>Menina pode treinar?</summary><p>Pode e deve. A Escola do Inter Canoas tem turmas de futebol feminino.</p></details>
+      <details><summary>Precisa já saber jogar?</summary><p>Não. A aula experimental serve para o professor conhecer o aluno e indicar a turma certa.</p></details>
+      <details><summary>Quanto custa a mensalidade?</summary><p>Valores, matrícula e condições do mês são passados pelo WhatsApp, junto com o horário da turma.</p></details>
+      <details><summary>Onde fica e tem estacionamento?</summary><p>Av. Boqueirão, 2660, Estância Velha, Canoas, ao lado do Stock Center, dentro do complexo Evolution Sports, com estacionamento.</p></details>
+      <details><summary>Tem jogos e campeonatos?</summary><p>Sim. As turmas jogam amistosos aos sábados e participam de torneios como a Champions Cup.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="local sec" id="local">
+  <div class="wrap grade">
+    <div>
+      <p class="olho rv" style="color:#ff2b3f">Como chegar</p>
+      <h2 class="disp rv">Na Boqueirão, <em>em Canoas.</em></h2>
+      <p class="end rv">Av. Boqueirão, 2660 · Estância Velha, Canoas</p>
+      <p class="ref rv">Ao lado do Stock Center, dentro do complexo Evolution Sports.</p>
+      <div class="acoes rv">
+        <a class="btn btn-v" href="https://www.google.com/maps/search/?api=1&query=Evolution+Sports+Bar+Av.+Boqueir%C3%A3o+2660+Canoas" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        <a class="btn btn-l" data-wa="escola" href="#"><svg class="wa"><use href="#wa"/></svg>WhatsApp da escola</a>
+      </div>
+    </div>
+    <div class="mapa rv"><iframe title="Mapa da Escola do Inter Canoas na Av. Boqueirão, 2660" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=-29.9052036,-51.1496025&z=16&output=embed"></iframe></div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2 class="disp rv">O sonho começa <em>com uma aula.</em></h2>
+    <p class="rv">Escolha a idade, o horário e mande a mensagem. A escola responde e marca o primeiro treino.</p>
+    <a class="btn rv" href="#turma"><svg class="wa"><use href="#wa"/></svg>Agendar aula experimental</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Escola do Inter Canoas · Evolution Sports · <a href="https://www.instagram.com/escoladointercanoas/" target="_blank" rel="noopener">@escoladointercanoas</a> · <a href="https://www.instagram.com/evolution.sportsbar/" target="_blank" rel="noopener">@evolution.sportsbar</a></span>
+    <span>Prévia criada pela <a href="https://anvilmarketing.com.br" target="_blank" rel="noopener">Anvil</a> com as fotos dos perfis da escola e da Evolution.</span>
+  </div>
+</footer>
+
+<a class="fab" data-wa="escola" href="#"><svg class="wa"><use href="#wa"/></svg>Aula experimental</a>
+
+<script>
+(function(){
+  var NUM = { escola: '5551981972774', evo: '5551995330123' };
+  var MSG = {
+    escola: 'Oi! Vim pelo site da Escola do Inter Canoas e quero agendar uma aula experimental.',
+    'evo-quadra': 'Oi! Vim pelo site e quero reservar um horário de quadra na Evolution.',
+    'evo-festa': 'Oi! Vim pelo site e quero um orçamento de festa na Evolution.'
+  };
+  function link(num, txt){ return 'https://wa.me/' + num + '?text=' + encodeURIComponent(txt); }
+  document.querySelectorAll('[data-wa]').forEach(function(a){
+    var k = a.getAttribute('data-wa');
+    if (a.getAttribute('href') === '#turma') return;
+    a.href = link(k.indexOf('evo') === 0 ? NUM.evo : NUM.escola, MSG[k]);
+    a.target = '_blank'; a.rel = 'noopener';
+  });
+
+  var esc = { idade: null, turno: null };
+  var resumo = document.getElementById('resumo'), enviar = document.getElementById('enviar'), nome = document.getElementById('nome');
+  function monta(){
+    var n = nome.value.trim();
+    var quem = n ? (n + ', ') : 'meu filho(a), ';
+    var txt = 'Oi! Vim pelo site da Escola do Inter Canoas. Quero agendar uma aula experimental para ' + quem +
+      (esc.idade ? esc.idade : 'idade a combinar') + ', ' + (esc.turno ? esc.turno : 'horário a combinar') + '.';
+    resumo.textContent = (esc.idade || 'Idade?') + ' · ' + (esc.turno ? esc.turno.replace(/^(de |no )/, '') : 'horário?');
+    enviar.href = link(NUM.escola, txt);
+  }
+  document.querySelectorAll('.ops').forEach(function(g){
+    g.addEventListener('click', function(e){
+      var b = e.target.closest('.op'); if (!b) return;
+      g.querySelectorAll('.op').forEach(function(x){ x.setAttribute('aria-pressed', 'false'); });
+      b.setAttribute('aria-pressed', 'true');
+      esc[g.getAttribute('data-grupo')] = b.getAttribute('data-v');
+      monta();
+    });
+  });
+  nome.addEventListener('input', monta);
+  monta();
+
+  var topo = document.getElementById('topo');
+  var fab = document.querySelector('.fab');
+  function rola(){
+    topo.classList.toggle('solido', window.scrollY > window.innerHeight * 0.75);
+    fab.classList.toggle('on', window.scrollY > window.innerHeight * 0.9);
+  }
+  window.addEventListener('scroll', rola, { passive: true }); rola();
+
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }) : null;
+  document.querySelectorAll('.rv').forEach(function(el, i){
+    if (io) { el.style.transitionDelay = ((i % 4) * 70) + 'ms'; io.observe(el); } else el.classList.add('on');
+  });
+})();
+</script>
+</body>
+</html>
