@@ -4,127 +4,143 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Roteiro da gravação · Evolution</title>
+<title>Roteiros · Evolution</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root { --tinta: #16181d; --suave: #5b6170; --linha: #e3e5ea; --fundo: #ffffff; --faixa: #f5f6f8; --verm: #c8102e; --verde: #0f7a4a; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--fundo); color: var(--tinta); font: 15px/1.5 "Segoe UI", Arial, sans-serif; }
-  main { max-width: 860px; margin: 0 auto; padding: 28px 16px 48px; }
-  header { border-bottom: 3px solid var(--verm); padding-bottom: 14px; margin-bottom: 22px; }
-  .rotulo { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--verm); font-weight: 700; }
-  h1 { font-size: 26px; line-height: 1.2; margin: 6px 0 6px; }
-  .meta { color: var(--suave); font-size: 14px; }
-  h2 { font-size: 19px; margin: 30px 0 10px; padding-top: 6px; border-top: 1px solid var(--linha); }
-  h3 { font-size: 16px; margin: 0 0 4px; }
-  p { margin: 6px 0; }
-  ul, ol { margin: 6px 0 6px 20px; padding: 0; }
-  li { margin: 3px 0; }
-  table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 8px 0; }
-  th, td { text-align: left; vertical-align: top; padding: 7px 8px; border-bottom: 1px solid var(--linha); }
-  th { background: var(--faixa); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--suave); }
-  td:first-child { white-space: nowrap; font-weight: 600; }
-  .video { border: 1px solid var(--linha); border-left: 4px solid var(--verm); border-radius: 6px; padding: 12px 14px; margin: 12px 0; break-inside: avoid; }
-  .video.ev { border-left-color: var(--tinta); }
-  .video.pub { border-left-color: var(--verde); }
-  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; background: var(--faixa); color: var(--suave); border-radius: 3px; padding: 1px 6px; margin-right: 4px; }
-  .fala { background: var(--faixa); border-radius: 6px; padding: 9px 12px; margin: 8px 0; font-size: 15px; }
-  .fala b { color: var(--verm); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; display: block; margin-bottom: 2px; }
-  .k { color: var(--suave); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
-  .nota { border: 1px solid var(--linha); background: var(--faixa); border-radius: 6px; padding: 10px 12px; margin: 10px 0; font-size: 14px; }
-  .check li { list-style: none; margin-left: -18px; }
-  .check li::before { content: "☐ "; color: var(--suave); }
-  footer { margin-top: 30px; color: var(--suave); font-size: 12px; }
-  @media (max-width: 560px) { td:first-child { white-space: normal; } }
-  @media print { body { font-size: 12.5px; } main { padding: 0; } h2 { break-after: avoid; } }
-  @page { size: A4; margin: 14mm 13mm; }
+@page{size:A4;margin:12mm 13mm}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0B1220;--red:#C8102E;--ink:#0B1624;--gray:#6B7480;--line:#D9DCE0;--soft:#F6F5F1}
+body{font-family:'Inter Tight',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.4;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+main{max-width:820px;margin:0 auto;padding:28px 16px 40px}
+.mono{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gray)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-weight:600;font-size:15px;letter-spacing:.34em}
+.brand i{display:inline-block;width:8px;height:8px;background:var(--navy);margin-right:10px;transform:rotate(45deg);vertical-align:1px}
+h1{margin-top:26px;font-weight:400;font-size:38px;line-height:1.04;letter-spacing:-.04em}
+h1 em{font-style:normal;color:var(--red)}
+.sub{margin-top:12px;font-size:15px;color:#3B4651;max-width:640px}
+.dicas{margin-top:22px;background:var(--navy);color:#fff;border-radius:18px;padding:20px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px 22px;break-inside:avoid}
+.dicas h2{grid-column:1/-1;font-weight:400;font-size:18px;letter-spacing:-.02em}
+.dicas div{font-size:13px;line-height:1.38;color:rgba(255,255,255,.86);padding-left:15px;position:relative}
+.dicas div::before{content:"";position:absolute;left:0;top:.45em;width:7px;height:7px;border-radius:50%;background:var(--red)}
+.dicas b{color:#fff;font-weight:500}
+.manha{margin-top:14px;font-size:13px;color:#3B4651;border:1px solid var(--line);border-radius:14px;padding:12px 16px;break-inside:avoid}
+.manha b{font-weight:500;color:var(--ink)}
+.parte{margin-top:30px;display:flex;align-items:baseline;gap:12px;break-after:avoid}
+.parte h2{font-weight:400;font-size:24px;letter-spacing:-.03em}
+.r{margin-top:14px;border:1px solid var(--line);border-radius:18px;padding:18px 22px 20px;break-inside:avoid}
+.rh{display:flex;justify-content:space-between;align-items:baseline;gap:14px}
+.rh h3{font-weight:400;font-size:21px;letter-spacing:-.03em;line-height:1.15}
+.rh h3 span.n{font-family:'DM Mono',monospace;font-size:12px;color:var(--gray);margin-right:8px;letter-spacing:.05em}
+.rh .mono{white-space:nowrap}
+.tag{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:500;padding:2px 9px;border-radius:99px;margin-left:6px;vertical-align:3px;letter-spacing:0}
+.meta{display:flex;gap:4px 16px;flex-wrap:wrap;margin-top:6px}
+.meta span{font-size:13px;color:#3B4651}
+.meta b{font-weight:500;color:var(--ink)}
+.obj{margin-top:6px;font-size:13px;color:var(--gray)}
+.cenas{margin-top:12px;display:grid;gap:8px}
+.c{display:grid;grid-template-columns:76px 1fr;gap:12px;font-size:14px;line-height:1.4}
+.c .q{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.06em;color:var(--gray);text-transform:uppercase;padding-top:2px}
+.c.g .q{color:var(--red)}
+.c em{font-style:normal;color:#3B4651}
+.c b{font-weight:500}
+.tela{margin-top:10px;font-size:12.5px;color:var(--gray)}
+.tela b{color:var(--ink);font-weight:500}
+.caixa{margin-top:14px;border:1px solid var(--line);border-radius:18px;padding:18px 22px;break-inside:avoid}
+.caixa h2{font-weight:400;font-size:18px;letter-spacing:-.02em;margin-bottom:8px}
+.caixa li{font-size:13.5px;margin:4px 0 4px 18px}
+.foot{margin-top:26px;padding-top:12px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--gray)}
+.foot b{color:var(--ink);font-weight:500}
+a{color:var(--red)}
+@media (max-width:620px){h1{font-size:30px}.dicas{grid-template-columns:1fr}.c{grid-template-columns:1fr;gap:2px}.rh{flex-direction:column;gap:2px}}
+@media print{main{padding:0;max-width:none}h1{margin-top:14px}}
 </style>
 </head>
 <body>
 <main>
+  <div class="top"><span class="brand"><i></i>ANVIL</span><span class="mono">Evolution Sports + Escola do Inter Canoas · seg 16/11, 9h</span></div>
+  <h1>8 vídeos que vendem. <em>Numa manhã só.</em></h1>
+  <p class="sub">Felipe, cada vídeo é um anúncio com um público e uma oferta: rosto do Juninho, aula de verdade e o complexo funcionando. É o que ninguém na Boqueirão mostra hoje. Nós editamos, legendamos e colocamos no ar.</p>
 
-<header>
-  <div class="rotulo">Anvil · Evolution Sports + Escola do Inter Canoas</div>
-  <h1>Roteiro da gravação</h1>
-  <div class="meta">Segunda 16/11, 9h · Av. Boqueirão, 2660, Canoas<br>
-  Vamos sair de lá com material para um mês de posts e anúncios da Evolution e da Escola do Inter. Não precisa decorar nada: a gente lê junto e tu fala do teu jeito, frase por frase.<br>Os vídeos da Escola do Inter estão no outro roteiro: <a href="https://evolutionsports.anvilmarketing.com.br/escola/">evolutionsports.anvilmarketing.com.br/escola</a></div>
-</header>
-
-<h2>O que deixar pronto</h2>
-<ul class="check">
-  <li>Turma das 9h30 com o uniforme completo da Escola do Inter</li>
-  <li>Society e areia com gente jogando, se der (nem que seja um racha de 15 minutos)</li>
-  <li>Salão arrumado e uma churrasqueira acesa, se der</li>
-  <li>Um prato da alaminuta saindo lá pelas 11h15</li>
-  <li>Tu com a camisa da escola</li>
-  <li>Se tiver criança vindo fazer aula experimental na segunda, avisa: é o vídeo 6 da escola</li>
-</ul>
-
-<h2>Como vai ser a manhã</h2>
-<table>
-  <tr><th>Hora</th><th>O quê</th><th>Onde</th></tr>
-  <tr><td>9h00</td><td>Alinhamento rápido: as perguntas do fim deste roteiro</td><td>Bar ou salão</td></tr>
-  <tr><td>9h10</td><td>Tuas falas da Evolution (vídeos 1 a 4)</td><td>Society, salão, churrasqueiras</td></tr>
-  <tr><td>9h30</td><td>Aula da Escola do Inter. Filmamos sem atrapalhar o treino; só os fundamentos e as perguntas pedem 10 minutos no fim</td><td>Society</td></tr>
-  <tr><td>10h30</td><td>Quadras com movimento, fachada, entrada, estacionamento</td><td>Quadras e frente</td></tr>
-  <tr><td>11h15</td><td>Bar, sinuca e prato do Rei da Alaminuta</td><td>Bar e restaurante</td></tr>
-  <tr><td>11h45</td><td>Fotos para o Google (fachada, quadras, salão, churrasqueiras, bar, escola)</td><td>Complexo todo</td></tr>
-</table>
-
-<h2>Evolution Sports</h2>
-
-<div class="video ev">
-  <h3>Evolution 1 · Tudo num lugar só</h3>
-  <span class="tag">Reels e anúncio</span><span class="tag">30 a 40 s</span>
-  <p><span class="k">Gancho:</span> tu entrando no society, a câmera acompanhando por trás e virando para o rosto.</p>
-  <div class="fala"><b>Tua fala</b>"Aqui na Evolution tu joga o teu racha, teu filho treina na Escola do Inter, e depois tem bar, almoço e churrasqueira. Tudo no mesmo lugar, na Boqueirão. Chama no WhatsApp e reserva o teu horário."</div>
-  <p><span class="k">Cenas:</span> portão, society de cima, areia, salão, as 4 churrasqueiras, bar, prato saindo, gurizada de camisa do Inter, estacionamento.</p>
-</div>
-
-<div class="video ev">
-  <h3>Evolution 2 · Aniversário com a camisa do Inter</h3>
-  <span class="tag">Anúncio de festa</span><span class="tag">20 a 30 s</span>
-  <div class="fala"><b>Tua fala (no salão, campo ao fundo)</b>"Aniversário aqui é jogo no campo pra gurizada, salão e churrasqueira pros pais, e bar do lado. Tu só traz o bolo. Chama no WhatsApp e pede o orçamento da festa."</div>
-  <p>Ideia: um professor da escola puxando um treino na festa. É uma festa que só uma escola de clube consegue oferecer.</p>
-</div>
-
-<div class="video ev">
-  <h3>Evolution 3 · Confra de fim de ano</h3>
-  <span class="tag">Anúncio de dezembro</span><span class="tag">15 a 25 s</span>
-  <div class="fala"><b>Tua fala (nas churrasqueiras)</b>"Tá organizando a confra da firma? Aqui tem society pro jogo, churrasqueira, salão e bar. Chama no WhatsApp e garante a data de dezembro antes que lote."</div>
-</div>
-
-<div class="video ev">
-  <h3>Evolution 4 · Teu time tá sem campo?</h3>
-  <span class="tag">Anúncio de society</span><span class="tag">15 s</span>
-  <div class="fala"><b>Tua fala (no meio do society)</b>"Tem horário livre de society [dia e hora]. Grama sintética, estacionamento e bar do lado. Chama no WhatsApp e fecha o teu horário fixo."</div>
-</div>
-
-<div class="video ev">
-  <h3>Evolution 5 · O jogo acaba, a resenha não</h3>
-  <span class="tag">Reels</span><span class="tag">15 a 20 s</span>
-  <p><span class="k">Cenas:</span> apito final, corte para o copo no balcão, prato de alaminuta saindo, mesa de amigos, sinuca, TV no futebol.</p>
-</div>
-
-<div class="video pub">
-  <h3>Evolution 6 · Anuncie na Evolution</h3>
-  <span class="tag">Venda de publicidade</span><span class="tag">20 a 30 s</span>
-  <p>A Evolution vendendo espaço de marca para empresas de Canoas: placa nas quadras, espaço no bar e presença nos nossos vídeos. É receita nova com o público que já passa aí toda semana.</p>
-  <div class="fala"><b>Tua fala (com a placa ou o muro vazio atrás)</b>"Tu tem empresa aqui em Canoas? Toda semana passa muita gente pela Evolution: quem joga o racha, os pais da Escola do Inter, quem vem pro aniversário e pro almoço. Esse espaço aqui atrás pode ser da tua marca. Chama no WhatsApp que eu te mostro os espaços livres."</div>
-  <p>Também dá para pôr uma placa "Anuncie aqui" com QR do WhatsApp em cada espaço vazio.</p>
-</div>
-
-<h2>Pra fechar as falas, precisamos saber</h2>
-<ol>
-  <li>A aula experimental é grátis? Quais idades em cada turma?</li>
-  <li>Quais horários de society e de areia mais sobram na semana?</li>
-  <li>O que entra no pacote de aniversário e de confra, e os valores.</li>
-  <li>Quais espaços de publicidade tu quer vender e quanto cobra por cada um.</li>
-  <li>A alaminuta ainda sai a partir de R$ 25,90? Horário do bar e do almoço.</li>
-  <li>O bar passa jogo na TV? (Dia de Gre-Nal vira vídeo.)</li>
-  <li>A franquia aceita collab com o @escoladointer? Tem regra de marca?</li>
-</ol>
-
-<footer>Anvil · roteiro da gravação de 16/11/2026</footer>
+  <section class="dicas">
+    <h2>Como gravar</h2>
+    <div><b>Tudo em pé</b>, 9:16, 4K a 30. Chute e comemoração em 60 ou 120 para câmera lenta.</div>
+    <div><b>Os 2 primeiros segundos</b> seguram o vídeo. Grava o começo primeiro, com calma.</div>
+    <div><b>O Juninho fala do jeito dele.</b> O roteiro é guia. Duas ou três tomadas de cada fala.</div>
+    <div><b>3 segundos de sobra</b> antes e depois de cada tomada.</div>
+    <div><b>Adulto no vídeo:</b> grava antes o “pode postar?”. Aluno nunca com nome na tela.</div>
+    <div><b>Material bruto pelo Drive</b>, não pelo WhatsApp: ele comprime.</div>
+  </section>
+  <div class="manha"><b>A manhã:</b> 9h falas do Juninho (04 a 08) · 9h30 aula da escola (01 a 03) · 10h30 quadras com movimento e fachada · 11h15 bar e alaminuta · 11h45 fotos para o Google: fachada, cada quadra, salão, churrasqueiras, bar e cada muro vazio (vira o catálogo da publicidade).</div>
+  <div class="parte"><h2>Escola do Inter</h2><span class="mono">01 a 03 · durante a aula</span></div>
+  <section class="r">
+    <div class="rh"><h3><span class="n">01</span>Teu filho quer jogar no Inter? <span class="tag">o anúncio que mais vende</span></h3><span class="mono">25 segundos</span></div>
+    <div class="meta"><span><b>Onde:</b> society, durante a aula das 9h30</span><span><b>Quem:</b> Juninho e a turma</span></div>
+    <p class="obj">Objetivo: matrícula. Escola com a camisa de um clube, dentro do complexo. Leva para a aula experimental.</p>
+    <div class="cenas"><div class="c g"><span class="q">2 s</span><span><em>Close da chuteira, o chute, a bola estufando a rede e a turma comemorando. Corte seco para o Juninho.</em></span></div><div class="c"><span class="q">Cena 1</span><span><em>No campo, com a turma treinando atrás.</em> <b>“Pai e mãe de Canoas: teu filho quer jogar com a camisa do Inter?”</b></span></div><div class="c"><span class="q">Cena 2</span><span><em>Treino: passe, drible, chute, o Juninho corrigindo um aluno.</em> <b>“Aqui na Evolution funciona a Escola do Inter. Turma separada por idade, de manhã e no fim da tarde.”</b></span></div><div class="c"><span class="q">Cena 3</span><span><em>Para a câmera, um aluno do lado tocando a bola.</em> <b>“Manda no WhatsApp a idade do teu filho que a gente marca a aula experimental.”</b></span></div></div>
+    <p class="tela"><b>Na tela:</b> Escola do Inter Canoas · aula experimental</p>
+  </section>
+  <section class="r">
+    <div class="rh"><h3><span class="n">02</span>Quem é teu ídolo no Inter? <span class="tag">collab com a rede</span></h3><span class="mono">20 a 30 segundos</span></div>
+    <div class="meta"><span><b>Onde:</b> beira do campo, no fim da aula</span><span><b>Quem:</b> 6 a 8 alunos; o Felipe pergunta fora do quadro</span></div>
+    <p class="obj">Objetivo: alcance. Sai em collab no @escoladointercanoas com o @evolution.sportsbar e convite ao perfil oficial @escoladointer. É o vídeo que a rede tem motivo para repostar.</p>
+    <div class="cenas"><div class="c g"><span class="q">2 s</span><span><em>Abre com a melhor resposta: o aluno mais solto, bem de perto, gritando o nome do ídolo.</em></span></div><div class="c"><span class="q">Cena 1</span><span><em>Um aluno por vez, mesmo enquadramento: peito para cima, campo atrás.</em> <b>Pergunta: “Quem é teu ídolo no Inter?”</b></span></div><div class="c"><span class="q">Cena 2</span><span><em>Os mesmos alunos, resposta curta.</em> <b>Pergunta: “E tu vai jogar no Inter um dia?”</b></span></div><div class="c"><span class="q">Cena 3</span><span><em>O Juninho fecha, com a turma atrás.</em> <b>“E o meu é [o ídolo dele]. Escola do Inter, aqui em Canoas.”</b></span></div></div>
+    <p class="tela"><b>Na tela:</b> Quem é teu ídolo no Inter?</p>
+  </section>
+  <section class="r">
+    <div class="rh"><h3><span class="n">03</span>Fundamento da semana <span class="tag">4 vídeos numa tomada</span></h3><span class="mono">15 segundos cada</span></div>
+    <div class="meta"><span><b>Onde:</b> canto do campo, no fim da aula</span><span><b>Quem:</b> Juninho e um aluno que domine bem</span></div>
+    <p class="obj">Objetivo: um mês de posts da escola sem gravar de novo. O pai vê o filho aprendendo. Grava quatro: domínio, passe de chapa, condução e chute.</p>
+    <div class="cenas"><div class="c g"><span class="q">2 s</span><span><em>A bola chegando alta e o aluno matando no pé, em câmera lenta.</em></span></div><div class="c"><span class="q">Cena 1</span><span><em>Juninho para a câmera, bola no pé.</em> <b>“Fundamento da semana: domínio.”</b></span></div><div class="c"><span class="q">Cena 2</span><span><em>O aluno faz três vezes; o Juninho explica numa frase.</em> <b>“Olho na bola, a perna amortece e a bola para no pé.”</b></span></div><div class="c"><span class="q">Cena 3</span><span><em>Os dois para a câmera.</em> <b>“Treina em casa e marca a Escola do Inter Canoas.”</b></span></div></div>
+    <p class="tela"><b>Na tela:</b> Fundamento da semana · domínio</p>
+  </section>
+  <div class="parte"><h2>Evolution</h2><span class="mono">04 a 08 · antes e depois da aula</span></div>
+  <section class="r">
+    <div class="rh"><h3><span class="n">04</span>Morador de Canoas: tu conhece a Evolution? <span class="tag">base de todos os anúncios</span></h3><span class="mono">20 segundos</span></div>
+    <div class="meta"><span><b>Onde:</b> portão, society, areia, salão, bar</span><span><b>Quem:</b> Juninho andando</span></div>
+    <p class="obj">Objetivo: em 20 segundos, quem vê entende tudo o que tem num endereço só.</p>
+    <div class="cenas"><div class="c g"><span class="q">2 s</span><span><em>O Juninho abrindo o portão, câmera atrás dele, e virando para a câmera.</em></span></div><div class="c"><span class="q">Cena 1</span><span><em>No portão.</em> <b>“Morador de Canoas: na Boqueirão, 2660, tem um lugar que tu precisa conhecer.”</b></span></div><div class="c"><span class="q">Cena 2</span><span><em>Cortes rápidos, um lugar por palavra. Ele fala andando ou em off.</em> <b>“Society. Areia. Escola do Inter. Bar. Almoço. Churrasqueira. Estacionamento.”</b></span></div><div class="c"><span class="q">Cena 3</span><span><em>No balcão do bar.</em> <b>“Tudo no mesmo lugar. Chama no WhatsApp e reserva teu horário.”</b></span></div></div>
+    <p class="tela"><b>Na tela:</b> cada palavra entra junto com o lugar</p>
+  </section>
+  <section class="r">
+    <div class="rh"><h3><span class="n">05</span>Aniversário com jogo de verdade <span class="tag">a festa com a camisa do Inter</span></h3><span class="mono">25 segundos</span></div>
+    <div class="meta"><span><b>Onde:</b> salão arrumado, campo e churrasqueira</span><span><b>Quem:</b> Juninho</span></div>
+    <p class="obj">Objetivo: festa infantil. Quem anuncia aniversário em Canoas mostra buffet e decoração. Nós mostramos campo, churrasco e a camisa do Inter.</p>
+    <div class="cenas"><div class="c g"><span class="q">2 s</span><span><em>A câmera passa pela mesa posta do salão e sai no campo.</em></span></div><div class="c"><span class="q">Cena 1</span><span><em>No salão.</em> <b>“Procurando lugar pro aniversário do teu filho?”</b></span></div><div class="c"><span class="q">Cena 2</span><span><em>Campo, churrasqueira e bar, em cortes.</em> <b>“Aqui a gurizada joga bola no campo, os pais ficam no churrasco e o bar fica do lado.”</b></span></div><div class="c"><span class="q">Cena 3</span><span><em>No campo, bola na mão. Só se o Juninho confirmar.</em> <b>“E pode ter professor da Escola do Inter puxando o jogo.”</b></span></div><div class="c"><span class="q">Cena 4</span><span><em>Para a câmera.</em> <b>“Manda a data no WhatsApp que a gente monta o orçamento.”</b></span></div></div>
+    <p class="tela"><b>Na tela:</b> Aniversário com jogo de verdade</p>
+  </section>
+  <section class="r">
+    <div class="rh"><h3><span class="n">06</span>Já tem lugar pra confra da firma? <span class="tag">subir esta semana</span></h3><span class="mono">20 segundos</span></div>
+    <div class="meta"><span><b>Onde:</b> churrasqueiras e salão</span><span><b>Quem:</b> Juninho</span></div>
+    <p class="obj">Objetivo: fechar as datas de dezembro antes de lotar.</p>
+    <div class="cenas"><div class="c g"><span class="q">2 s</span><span><em>O Juninho abrindo a churrasqueira e olhando para a câmera.</em></span></div><div class="c"><span class="q">Cena 1</span><span><em>Na churrasqueira.</em> <b>“Já tem lugar pra confra da firma?”</b></span></div><div class="c"><span class="q">Cena 2</span><span><em>Society, churrasqueiras, salão e bar, em cortes.</em> <b>“Jogo no society, churrasco, salão e bar. Pra [capacidade] pessoas.”</b></span></div><div class="c"><span class="q">Cena 3</span><span><em>Para a câmera.</em> <b>“Dezembro lota rápido. Manda a data e quantas pessoas no WhatsApp.”</b></span></div></div>
+    <p class="tela"><b>Na tela:</b> Confra de fim de ano na Evolution</p>
+  </section>
+  <section class="r">
+    <div class="rh"><h3><span class="n">07</span>Teu racha ainda não tem horário fixo? <span class="tag">só para os horários vazios</span></h3><span class="mono">15 segundos</span></div>
+    <div class="meta"><span><b>Onde:</b> meio do society</span><span><b>Quem:</b> Juninho com a bola debaixo do braço</span></div>
+    <p class="obj">Objetivo: encher os horários que sobram na semana, não os lotados.</p>
+    <div class="cenas"><div class="c g"><span class="q">2 s</span><span><em>A bola quicando sozinha no campo vazio e o Juninho segurando.</em></span></div><div class="c"><span class="q">Cena 1</span><span><em>No meio do campo.</em> <b>“Teu racha ainda não tem horário fixo?”</b></span></div><div class="c"><span class="q">Cena 2</span><span><em>Rede, gramado, estacionamento, bar.</em> <b>“Tem society livre [dia e hora]. Grama sintética, estacionamento e bar do lado.”</b></span></div><div class="c"><span class="q">Cena 3</span><span><em>Para a câmera.</em> <b>“Manda no WhatsApp o dia que teu time joga e fecha o mensal.”</b></span></div></div>
+    <p class="tela"><b>Na tela:</b> Horário fixo de society · [dia e hora]</p>
+  </section>
+  <section class="r">
+    <div class="rh"><h3><span class="n">08</span>Esse muro tá vazio <span class="tag">venda de publicidade</span></h3><span class="mono">20 segundos</span></div>
+    <div class="meta"><span><b>Onde:</b> o alambrado ou muro mais visto do complexo</span><span><b>Quem:</b> Juninho</span></div>
+    <p class="obj">Objetivo: vender espaço de marca para empresas de Canoas. É receita nova com o público que já passa ali.</p>
+    <div class="cenas"><div class="c g"><span class="q">2 s</span><span><em>O Juninho batendo a mão no muro vazio.</em></span></div><div class="c"><span class="q">Cena 1</span><span><em>No muro.</em> <b>“Esse espaço aqui é visto por [quantas] pessoas por semana. E tá vazio.”</b></span></div><div class="c"><span class="q">Cena 2</span><span><em>Cortes do público: racha, pais na beira do campo, bar cheio.</em> <b>“Quem joga o racha, os pais da Escola do Inter, quem vem pro almoço e pros aniversários.”</b></span></div><div class="c"><span class="q">Cena 3</span><span><em>Para a câmera.</em> <b>“Tem empresa em Canoas? Coloca tua marca aqui. Chama no WhatsApp que eu te mostro os espaços.”</b></span></div></div>
+    <p class="tela"><b>Na tela:</b> Anuncie na Evolution</p>
+  </section>
+  <section class="caixa">
+    <h2>Perguntar ao Juninho às 9h, antes de gravar</h2>
+    <ul>
+      <li>A aula experimental é grátis? Se for, entra “grátis” no 01.</li>
+      <li>Quais dia e hora de society mais sobram na semana (07)?</li>
+      <li>Quantas pessoas cabem no salão e nas churrasqueiras (06)? Professor da escola pode ir na festa (05)?</li>
+      <li>Quantas pessoas passam por semana e quais espaços ele quer vender (08)?</li>
+      <li>A franquia aceita collab com o @escoladointer (02)?</li>
+    </ul>
+  </section>
+  <div class="foot"><span><b>Anvil Marketing</b> · anvilmarketing.com.br</span><span>Av. Boqueirão, 2660, Canoas</span></div>
 </main>
 </body>
 </html>
